@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'baloo bhai 2';
+    line-height: 1.6;
+    background-color: bisque;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(188, 56, 46);
+}
+
+.logo {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    text-align: center;
+    color: rgb(188, 56, 46);
+    font-size: 25px;
+    rotate: 0deg;
+    margin-bottom: 15px;
+}
+
+header {
+    top: 0%;
+    position: sticky;
+    z-index: 0;
+    background-color: bisque;
+    border-bottom: 1px solid red;
+    height: 60px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 15px;
+    overflow: hidden;
+}
+
+.buttons ul {
+    display: flex;
+    padding-top: 15px;
+    column-gap: 25px;
+    list-style-type: none;
+}
+
+.navLi:hover {
+    cursor: pointer;
+    color: rgb(188, 56, 46);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(255, 128, 0, 0.749);
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: bisque;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background: rgb(188, 56, 46);
+    color: white;
+}
+
+.newBlog {
+    font-size: 13px;
+    background-color: rgb(188, 56, 46);
+    color: white;
+    margin-bottom: 9px;
+}
+
+.newBlog:hover {
+    color: rgb(188, 56, 46);
+    background: bisque;
+}
+
+.write {
+    margin: 20px;
+    text-align: center;
+}
+
+.pTitle {
+    font-size: 20px;
+    color: rgb(188, 56, 46);
+    margin-left: 70px;
+    width: 150px;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.779);
+
+}
+
+.buttons {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.blogCard {
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogIntro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #555555d3;
+    height: 135px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: normal;
+    padding: 4px;
+    font-size: 12px;
+    line-height: 100%;
+    margin: 2px;
+}
+
+.readMore {
+    font-size: 11px;
+    margin-top: 11px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid red;
+    padding-top: 20px;
+    color: gray
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Post</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>BlogSpace</h1>
+                </div>    
+                <div class="buttons">
+                    <ul>
+                        <li class="navLi">Sign in</li>
+                        <li class="navLi">Contact us</li>
+                        <li class="navLi">Resources</li>
+                        <li class="navLi">About us</li>
+                        <li class="navLi"><img src=https://cdn-icons-png.flaticon.com/512/484/484633.png alt="langIcon" height="20px" width="20px"></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+    <h1>New Post</h1>
+    <form action="/posts" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required>
+        <br>
+        <label for="body">Body:</label>
+        <textarea name="body" id="body" required></textarea>
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+    <footer>
+        Thanks for visiting BlogSpace!
+    </footer>
+</div>
+</body>
+</html>

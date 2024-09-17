@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BlogSpace-Home</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>BlogSpace</h1>
+                </div>
+                <div class="buttons">
+                    <ul>
+                        <li class="navLi">Sign_in</li>
+                        <li class="navLi">Contact_us</li>
+                        <li class="navLi">Resources</li>
+                        <li class="navLi">About_us</li>
+                        <li class="navLi"><img src=https://cdn-icons-png.flaticon.com/512/484/484633.png alt="langIcon"
+                                height="20px" width="20px"></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="write">
+            <form action="/posts/new" method="GET" style="display:inline;">
+                <button class="newBlog" type="submit">Write a Blog</button>
+            </form>
+
+            <div>
+                Publish your passions, your way
+            </div>
+            <div>
+                Create a unique and beautiful blog easily.
+            </div>
+        </div>
+
+        <div class="box">
+
+
+            <% posts.forEach(post=> { %>
+                <li>
+                    <div class="blogCard">
+
+                        <div class="pTitle">
+                            <%= post.title %>
+                        </div>
+                        <p class="blogIntro">
+                            <%= post.body %>
+                        </p>
+                        <div>
+                            <form action="/posts/<%= post._id %>" method="GET" style="display:inline;">
+                                <button class="readMore" type="submit">Read More</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <% }) %>
+
+        </div>
+        <footer>
+            Thanks for visiting!
+            <br>
+            ©Blogspace, 2024 | Powered by Shaur Mohd.
+        </footer>
+
+    </div>
+</body>
+
+</html>
